@@ -1,12 +1,10 @@
-import os
-import sys
-import unittest
+import os, sys, unittest, time
 
 from os.path import abspath, dirname, join
 
 DAK_ROOT_DIR = dirname(dirname(abspath(__file__)))
 
-
+time.sleep(0.001)
 class DakTestCase(unittest.TestCase):
     def setUp(self):
         pass
